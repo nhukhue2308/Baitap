@@ -1,0 +1,13 @@
+def create_product_html(discount, image, name, price, short_desc, tag, unit_price):
+    html = f'''
+    <div class="product">
+        <img src="{image}" alt="{name}">
+        <h2>{name}</h2>
+        <p class="price">Price: <span class="unit-price">{unit_price}</span></p>
+        <p>Discount: {discount}%</p>
+        <p>{short_desc}</p>
+        <p>Tag: {tag}</p>
+        <p class="price">Final Price: <span class="final-price">{price}</span></p>
+    </div>
+    '''
+    return html
